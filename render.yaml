@@ -2,6 +2,7 @@ services:
   - type: web
     name: telegram-ema-bot
     env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "bash start.sh"
-    pythonVersion: 3.10
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash start.sh
+    plan: free
+    pythonVersion: 3.10.13
